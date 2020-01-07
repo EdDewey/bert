@@ -356,7 +356,7 @@ def create_masked_lm_predictions(tokens, masked_lm_prob,
     # Note that Whole Word Masking does *not* change the training code
     # at all -- we still predict each WordPiece independently, softmaxed
     # over the entire vocabulary.
-    if (FLAGS.do_whole_word_mask and len(cand_indexes) >= 1 and
+    if (True and len(cand_indexes) >= 1 and # had FLAGS.do_whole_word_mask
         token.startswith("##")):
       cand_indexes[-1].append(i)
     else:
