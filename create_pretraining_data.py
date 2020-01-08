@@ -68,7 +68,7 @@ if False:
         "Probability of creating sequences which are shorter than the "
         "maximum length.")
 else:
-    FLAGS = attrdict.Attrdict(
+    FLAGS = attrdict.AttrDict(
         {
             'input_file': 'bert/bert_training_example.txt',  # Careful about relative paths, this is probably going
             # to fail
